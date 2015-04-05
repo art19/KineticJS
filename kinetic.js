@@ -10209,6 +10209,7 @@ var Kinetic = {};
                     }
                     // if no shape, and no antialiased pixel, we should end searching 
                     if (continueSearch) {
+                        continueSearch = false; // Fix suggested by @lowpitch here: https://github.com/bbcrd/peaks.js/issues/114
                         spiralSearchDistance += 1;
                     } else {
                         return;
